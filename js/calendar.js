@@ -41,14 +41,14 @@ function Calendar(data, {
     formatMonth = ES.utcFormat(formatMonth);
   
     // Compute titles.
-    if (title === undefined) {
-      const formatDate = d3.utcFormat("%B %-d, %Y");
-      const formatValue = colorScale.tickFormat(100, yFormat);
-      title = i => `${formatDate(X[i])}\n${formatValue(Y[i])}`;
-    } else if (title !== null) {
-      const T = d3.map(data, title);
-      title = i => T[i];
-    }
+    // if (title === undefined) {
+    //   const formatDate = d3.utcFormat("%B %-d, %Y");
+    //   const formatValue = colorScale.tickFormat(100, yFormat);
+    //   title = i => `${formatDate(X[i])}\n${formatValue(Y[i])}`;
+    // } else if (title !== null) {
+    //   const T = d3.map(data, title);
+    //   title = i => T[i];
+    // }
   
     // Group the index by year, in reverse input order. (Assuming that the input is
     // chronological, this will show years in reverse chronological order.)
