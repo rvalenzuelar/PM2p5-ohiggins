@@ -1,0 +1,79 @@
+g.axis path {
+	display: none;
+}
+
+.title {
+	font-family: 'Source Serif Pro', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+	color:rgb(85,87,89);
+}
+
+.article-title {
+    font-weight: 500;
+    font-size: 18px;
+	color:rgb(85,87,89);
+    margin-bottom:20px;
+
+}
+
+.title-author {
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+	color:rgb(85,87,89);
+    line-height: 0px;
+    margin-bottom:20px;
+}
+
+.p {
+    /* font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+	color:rgb(85,87,89); */
+    line-height: 0px;
+    margin-bottom:0px;
+}
+
+body {
+    font-family: 'Source Serif Pro', sans-serif; 
+    font-weight: 400;
+    /* white-space: normal; */
+}
+
+.tooltip {
+    background: rgba(255,255,255,.9);
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: 11px;
+    padding: 4px;
+    pointer-events: none;
+    text-align: left;
+}
+
+.tooltip p {
+    margin: 4px 0;
+}
+
+#p-wildfires a {
+    display: contents;
+}
+
+#p-sinca a {
+    display: contents;
+}
+
+/* vertical stop lines of colorbar */
+.axisRed line{
+    stroke: white;
+}
+
+/* horizontal bottom line of colorbar */
+.axisRed path{
+    stroke: white;
+}
+
+/* tick labels of colorbar */
+.axisRed text{
+    fill: black;
+} 
